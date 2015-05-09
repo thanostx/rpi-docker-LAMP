@@ -1,4 +1,4 @@
-FROM l3iggs/archlinux
+FROM cellofellow/rpi-arch
 MAINTAINER l3iggs <l3iggs@live.com>
 
 # install apache

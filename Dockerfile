@@ -3,11 +3,10 @@ MAINTAINER l3iggs <l3iggs@live.com>
 
 # update repos
 RUN pacman -Sy
-
 # install apache
 RUN pacman -S --noconfirm --needed apache
 # this folder is normally created by the systemd apache service which we won't be using
-RUN mkdir /run/httpd
+# RUN mkdir /run/httpd
 RUN sed -i '$a ServerName ${HOSTNAME}' /etc/httpd/conf/httpd.conf
 
 # install php

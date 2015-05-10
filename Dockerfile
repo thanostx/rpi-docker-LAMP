@@ -1,4 +1,4 @@
-FROM cellofellow/rpi-arch
+FROM yyolk/rpi-archlinuxarm:latest
 MAINTAINER l3iggs <l3iggs@live.com>
 
 # upgrade distro

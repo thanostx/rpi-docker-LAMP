@@ -2,7 +2,7 @@ FROM yyolk/rpi-archlinuxarm:latest
 MAINTAINER l3iggs <l3iggs@live.com>
 
 # upgrade distro
-RUN pacman -Syyu --noconfirm --needed
+# RUN pacman -Syyu --noconfirm --needed
 # install apache
 RUN pacman -S --noconfirm --needed apache
 # this folder is normally created by the systemd apache service which we won't be using
